@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UUM Photography Club</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <p><h1>Register New Member</h1></p>
+
+  <form action="newmember.php" method="GET" enctype="multipart/form-data" onsubmit="return confirm('Are you sure want to register new member?');">
+    
+    
+    <label for="membername">Name:</label><br>
+    <input type="text" id="membername" name="membername" value="" required><br><br>
+
+    <label for="matric">Matric:</label><br>
+    <input type="text" id="matric" name="matric" value="" required><br><br>
+
+    <label for="programme">Programme:</label><br>
+    <input type="text" id="programme" name="programme" value="" required><br><br>
+
+    <label for="sem">Semester:</label><br>
+    <select class="custom-select" name="sem">
+      <option value="0" title="Select Semester :">Select Semester :</option>
+      <option value="1" title="1">1</option>
+      <option value="2" title="2">2</option>
+      <option value="3" title="3">3</option>
+      <option value="4" title="4">4</option>
+      <option value="5" title="5">5</option>
+      <option value="6" title="6">6</option>
+      <option value="7" title="7">7</option>
+      <option value="8" title="8">8</option>
+    </select><br><br>
+
+    <label for="device">Camera Device:</label><br>
+    <input type="text" id="device" name="device" value="" required><br><br>
+
+    <label for="email">E-mail:</label><br>
+    <input type="text" id="email" name="email" value="" required><br><br>
+
+    <label for="phone">Phone:</label><br>
+    <input type="text" id="phone" name="phone" value="" required><br><br>
+
+    <label for="inasis">Inasis:</label><br>
+        <select class="custom-select" name="inasis">
+            <option value="0" title="Select Inasis :">Select Inasis :</option>
+            <option value="MAS" title="MAS">MAS</option>
+            <option value="TNB" title="TNB">TNB</option>
+            <option value="Proton" title="Proton">Proton</option>
+            <option value="Tradewinds" title="Tradewinds">Tradewinds</option>
+            <option value="Maybank" title="Maybank">Maybank</option>
+            <option value="Petronas" title="Petronas">Petronas</option>
+            <option value="Grantt" title="Grantt">Grantt</option>
+            <option value="Sime Darby" title="Sime Darby">Sime Darby</option>
+            <option value="TM" title="TM">TM</option>
+            <option value="BSN" title="BSN">BSN</option>
+            <option value="MISC" title="MISC">MISC</option>
+            <option value="Bank Muamalat" title="Bank Muamalat">Bank Muamalat</option>
+            <option value="Bank Rakyat" title="Bank Rakyat">Bank Rakyat</option>
+            <option value="SME Bank" title="SME Bank">SME Bank</option>
+            <option value="University Inn" title="University Inn">University Inn</option>
+        </select><br><br>
+
+    <input type="submit" value="Register" class="button" >
+  </form>
+</body>
+
+</html>
